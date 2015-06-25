@@ -43,7 +43,7 @@ def generate_json(mysql_url, mysql_username, mysql_password, mysql_table_name, o
             "query": "select * from %s" }
     },
     "transformers": [
-        { "vertex": { "class": "%s" } }
+        { "vertex": { "class": "%s", "extends": "V" } }
         %s
     ],
     "loader": {
